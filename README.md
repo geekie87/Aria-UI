@@ -48,11 +48,67 @@ Provider	Endpoint	Setup
 ✦ OpenAI	api.openai.com	Click ⚙ next to OpenAI tab
 🧪 LM Studio	http://localhost:1234	Click ⚙ next to LM Studio tab
 📦 Installation
+
+## Analysis of Python Requirements
+
+After carefully reviewing all three code snippets, I can confirm that **this program has zero external dependencies**. It uses exclusively Python standard library modules:
+
+### Dependencies Found (All Built-in):
+
+| Module | Purpose |
+|--------|---------|
+| `json` | Configuration file handling |
+| `os`, `sys` | File paths and command-line arguments |
+| `threading` | Background threads for voice processing |
+| `urllib.request`, `urllib.error` | HTTP requests to AI providers |
+| `ssl` | Secure HTTPS connections |
+| `time` | Timing/statistics |
+| `http.server.HTTPServer`, `BaseHTTPRequestHandler` | Built-in web server |
+
+### requirements.txt File:
+
+```txt
+# ARIA — Adaptive Reasoning Intelligence Assistant [VOICE EDITION]
+# No external Python dependencies required.
+# All functionality is implemented using the standard library.
+
+# ============================================================================
+# If you need additional features not in this codebase, add them below:
+# ============================================================================
+```
+
+### Why This Is Minimal:
+
+1. **No HTTP client libraries** — Uses `urllib` (built-in) instead of `requests`
+2. **No JSON library** — Uses built-in `json` module
+3. **No web framework** — Uses raw `http.server` module directly
+4. **No configuration library** — Uses plain Python dictionaries and `json.load()`
+
+### Optional External Dependencies (if you want enhanced features):
+
+If you plan to add features beyond what's shown in the snippets, here are common additions:
+
+```txt
+# For advanced logging
+# logging  # Also built-in
+
+# If you later want a proper web framework
+# flask==3.0.0
+
+# For better async support (if refactoring)
+# asyncio  # Built-in Python 3.5+
+```
+
+**Summary:** The program is intentionally lightweight and self-contained. You can run it with `python3 aria.py [port]` using only a standard Python 3 installation — no pip install required!
+
+--------------------------------------------------------------------------------------
 Prerequisites
 Python 3.8+
 pip (Python package installer)
 One of the following AI backends: Ollama, OpenAI API, or LM Studio
+--------------------------------------------------------------------------------------
 Quick Start
+
 # Clone the repository
 git clone <repository-url>
 cd aria
