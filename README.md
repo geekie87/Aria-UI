@@ -160,20 +160,20 @@ Press T or click the 🌙 button to switch between dark and light themes.
 🏗️ Architecture
 ARIA (Web Server)
     │
-    ├── Ollama API Integration
-    ├── OpenAI API Integration
-    └── LM Studio Integration
+    ├ ── Ollama API Integration
+    ├ ── OpenAI API Integration
+    └ ── LM Studio Integration
     │
-    ├── Speech-to-Text (STT)
-    │   ├── Browser Web Speech API
-    │   ├── OpenAI Whisper
-    │   └── Local Whisper
+    ├ ── Speech-to-Text (STT)
+    │   ├ ── Browser Web Speech API
+    │   ├ ── OpenAI Whisper
+    │   └ ── Local Whisper
     │
-    └── Text-to-Speech (TTS)
-        ├── Browser Web Speech API
-        ├── OpenAI TTS (tts-1, tts-1-hd)
-        ├── ElevenLabs
-        └── Azure TTS
+    └ ── Text-to-Speech (TTS)
+        ├ ── Browser Web Speech API
+        ├ ── OpenAI TTS (tts-1, tts-1-hd)
+        ├ ── ElevenLabs
+        └ ── Azure TTS
 📄 License
 This project is licensed under the MIT License - see below for details.
 
