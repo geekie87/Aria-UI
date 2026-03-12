@@ -157,8 +157,10 @@ Press the 🎤 button to enable voice input. Speak naturally and the assistant w
 Theme Toggle
 Press T or click the 🌙 button to switch between dark and light themes.
 
+--------------------------------------------------------------------------------------
 🏗️ Architecture
 ARIA (Web Server)
+--------------------------------------------------------------------------------------         
          Ollama API Integration
          OpenAI API Integration
          LM Studio Integration
